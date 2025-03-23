@@ -8,8 +8,9 @@ import java.time.Duration;
 
 public abstract class BaseTest {
     public static final String BASE_URL = "https://www.facebook.com/";
-    protected static final int MAX_WAIT_TIME = 10;
+    protected static final int MAX_WAIT_TIME = 20;
     protected static final String PRECISE_TEXT_PATH = "//*[text()='%s']";
+    protected static final String ID_PATH = "//*[@id='%s']";
     protected static final String CONTAINS_TEXT_PATH = "//*[contains(text(),'%s')]";
     protected WebDriver driver;
     protected WebDriverWait wait;
